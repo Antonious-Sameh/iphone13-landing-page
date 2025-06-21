@@ -1,0 +1,177 @@
+/* تحسين التصميم ليكون أكثر احترافية وعصرية */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* خلفية بتأثير ناعم */
+.container {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* تحسين الهيدر بإضافة تأثير زجاجي */
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين اللوجو */
+.container header a img {
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+.container header a img:hover {
+    transform: scale(1.1);
+}
+
+/* تعديل قائمة التنقل */
+.container header ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.container header ul li {
+    list-style: none;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* تحسين تأثير hover */
+.container header ul li a:hover {
+    color: #ffcc00;
+}
+.container header ul li:hover {
+    transform: scale(1.1);
+}
+
+/* تحسين المحتوى */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+/* تحسين النصوص */
+.content .text {
+    color: white;
+    width: 45%;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.content .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.5);
+}
+
+.content .text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* تحسين الزرار */
+.content .text button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+.content .text button:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.6);
+}
+
+/* تحسين صورة الهاتف */
+.image img {
+    width: 400px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1s ease-in-out 0.3s forwards;
+}
+
+.image img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* تحسين أيقونات تغيير الألوان */
+.icons {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.icons img {
+    width: 65px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.3s;
+}
+
+.icons img:hover {
+    transform: translateY(-10px) scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* تأثيرات الأنيميشن */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
